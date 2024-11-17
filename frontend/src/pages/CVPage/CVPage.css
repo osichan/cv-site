@@ -1,0 +1,20 @@
+.cv-page {
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.pdf-viewer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pdf-viewer-container .react-pdf__Viewer {
+  object-fit: contain;
+}
