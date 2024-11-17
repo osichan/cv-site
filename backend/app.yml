@@ -1,0 +1,28 @@
+runtime: java21  # Виберіть версію Java, яка відповідає вашому проєкту
+instance_class: F1  # Виберіть розмір інстансу (F1, F2, F4, тощо)
+
+env_variables:
+  SPRING_PROFILES_ACTIVE: production  # Активуйте профіль Spring Boot
+
+handlers:
+  - url: /.*
+    script: auto
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 5
+
+health_check:
+  enable_health_check: true
+  check_interval_sec: 5
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+
+network:
+  session_affinity: true  # Залишити сесії на одному інстансі (за необхідності)
+
+resources:
+  memory_gb: 0.5  # Обсяг пам'яті, який виділяється інстансу
+  disk_size_gb: 10  # Обсяг дискового простору

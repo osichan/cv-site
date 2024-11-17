@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e79744f-ec10-427f-beba-b64166de5d2c" name="Changes" comment="" />
+    <list default="true" id="8e79744f-ec10-427f-beba-b64166de5d2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/CustomCorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/OleksiiCvApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/controller/GitHubRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/controller/GitHubRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Header/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/GitHubPage/GitHubPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/GitHubPage/GitHubPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +33,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,9 +43,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2oz1IszCSyTRAimmnoFCWjppBMz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,8 +58,11 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
     "Spring Boot.OleksiiCvApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/cv-site/backend/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,7 +72,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oleksii-cv" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.taskmanagement.app.oleksiicv.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OleksiiCvApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="oleksii-cv" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.taskmanagement.app.oleksiicv.OleksiiCvApplication" />
@@ -76,6 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731857515937</updated>
       <workItem from="1731857516997" duration="4940000" />
+      <workItem from="1731873747355" duration="100000" />
+      <workItem from="1731873915212" duration="2982000" />
     </task>
     <servers />
   </component>

@@ -16,9 +16,9 @@ import java.util.Map;
 @RequestMapping("github")
 public class GitHubRestController {
 
-    @Value("token")
+    @Value("${token}")
     private String TOKEN;
-    @Value("name")
+    @Value("${name}")
     private String USER = "";
     private static final String URL_FOR_GET_ALL_REPOS = "https://api.github.com/user/repos";
     private List<Map<String, Object>> repos = null;

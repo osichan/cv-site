@@ -1,0 +1,6 @@
+runtime: python39 # App Engine буде використовувати Python для статичних файлів
+entrypoint: gunicorn -b :$PORT main:app
+
+handlers:
+  - url: /
+    static_dir: build # Папка зі зібраним React-додатком
