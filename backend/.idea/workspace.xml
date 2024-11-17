@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e79744f-ec10-427f-beba-b64166de5d2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/CustomCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/dto/PathRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/OleksiiCvApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/CustomCorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/config/CustomCorsConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/controller/GitHubRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/taskmanagement/app/oleksiicv/controller/GitHubRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
@@ -106,7 +103,7 @@
       <updated>1731857515937</updated>
       <workItem from="1731857516997" duration="4940000" />
       <workItem from="1731873747355" duration="100000" />
-      <workItem from="1731873915212" duration="2982000" />
+      <workItem from="1731873915212" duration="7370000" />
     </task>
     <servers />
   </component>

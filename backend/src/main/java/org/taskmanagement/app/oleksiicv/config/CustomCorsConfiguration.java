@@ -15,17 +15,17 @@ public class CustomCorsConfiguration implements CorsConfigurationSource {
     @Override
     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("http://localhost:3000"); // Дозволити вашому фронтенду
+        config.addAllowedOrigin("http://localhost:3000");
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Content-Type", "Authorization"));
-        config.setAllowCredentials(true); // Якщо використовуєте кукі або заголовки авторизації
+        config.setAllowCredentials(true);
         return config;
     }
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", getCorsConfiguration(null)); // Для всіх шляхів
+        source.registerCorsConfiguration("/**", getCorsConfiguration(null));
         return source;
     }
 }
