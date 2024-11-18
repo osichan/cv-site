@@ -1,0 +1,88 @@
+.home-container {
+  display: flex;
+  gap: 30px; /* Space between profile and repositories */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.profile-sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-sidebar h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.profile-sidebar p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profile-sidebar a {
+  font-size: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.profile-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.repositories-container {
+  flex: 3;
+  text-align: center;
+}
+
+.repositories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.repository-item {
+  width: 300px;
+  height: 100px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.repository-item h1 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.repository-item:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-top: 10px;
+}

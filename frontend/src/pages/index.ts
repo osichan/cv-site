@@ -1,3 +1,3 @@
 export { default as CVPage } from "./CVPage/CVPage";
-export { default as GitHubPage } from "./GitHubPage/GitHubPage";
+export { GitHubHomePage, GitHubDirectoryViewPage } from "./GitHubPages";
 export { default as LinkedInPage } from "./LinkedInPage/LinkedInPage";

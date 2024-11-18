@@ -1,4 +1,3 @@
-// src/pages/Contact.tsx
 import React from "react";
 
 const LinkedInPage = () => {

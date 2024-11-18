@@ -1,19 +1,24 @@
-// src/pages/App.tsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header"; // Import Header component
-import { CVPage, GitHubPage, LinkedInPage } from "./pages";
-import "./App.css"; // Import general styles
+import Header from "./components/Header/Header";
+import {
+  CVPage,
+  GitHubHomePage,
+  LinkedInPage,
+  GitHubDirectoryViewPage,
+} from "./pages";
+import "./App.css";
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Header /> {/* Using Header component */}
+        <Header />
         <main>
           <Routes>
             <Route path="/" Component={CVPage} />
-            <Route path="/github" Component={GitHubPage} />
+            <Route path="/github" Component={GitHubHomePage} />
+            <Route path="/:dirPath*" Component={GitHubDirectoryViewPage} />
             <Route path="/linkedIn" Component={LinkedInPage} />
           </Routes>
         </main>
@@ -22,4 +27,4 @@ const App = () => {
   );
 };
 
-export default App; // Make sure this is there
+export default App;
