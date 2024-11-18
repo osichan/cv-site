@@ -11,13 +11,6 @@ const tokenConfig = async ({
   endpoint,
   body,
 }: tokenConfigProps): Promise<AxiosRequestConfig<any>> => {
-  console.log("=============tokenConfig=======================");
-  console.log({
-    url: `${API_URL}/${endpoint}`,
-    method,
-    data: body,
-  });
-  console.log("====================================");
   const config: AxiosRequestConfig = {
     url: `${API_URL}/${endpoint}`,
     method,

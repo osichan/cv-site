@@ -32,3 +32,20 @@
 .nav-link:hover {
   color: #3498db;
 }
+
+.google-cloud {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Align to the left */
+}
+
+.google-cloud-icon {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.google-cloud-text {
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,7 +1,8 @@
 .home-container {
   display: flex;
-  gap: 30px; /* Space between profile and repositories */
-  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 30px;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .profile-sidebar {
@@ -37,6 +38,7 @@
   font-size: 1rem;
   color: #0066cc;
   text-decoration: none;
+  height: 100%;
 }
 
 .profile-sidebar a:hover {

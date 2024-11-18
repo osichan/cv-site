@@ -5,20 +5,24 @@ import { AllRepositoriesType } from "../../../utils/types/RepositoriesTypes";
 import "./GitHubHomePage.css";
 import { ProfileInfo } from "../../../utils/types/ProfileType";
 import { requestToGetProfileInfo } from "../../../services/api/ProfileApi";
+import { useError } from "../../../utils/context/ErrorContext";
 
 const GitHubHomePage = () => {
-  const [AllRepositories, setAllRepositories] = useState<AllRepositoriesType>();
+  const [AllRepositories, setAllRepositories] = useState<AllRepositoriesType>(
+    []
+  );
   const [profileInfo, setProfileInfo] = useState<ProfileInfo | null>(null);
 
   const navigate = useNavigate();
+  const { setError } = useError();
 
   const getData = async () => {
-    const data = await requestToGetAllEpisodes();
+    const data = await requestToGetAllEpisodes(setError);
     setAllRepositories(data);
   };
 
   const getProfile = async () => {
-    const data = await requestToGetProfileInfo();
+    const data = await requestToGetProfileInfo(setError);
     setProfileInfo(data);
   };
 
@@ -63,7 +67,7 @@ const GitHubHomePage = () => {
       <div className="repositories-container">
         <h2>GitHub Repositories</h2>
         <div className="repositories-grid">
-          {AllRepositories?.map((repository, index) => (
+          {AllRepositories.map((repository, index) => (
             <button
               key={index}
               className="repository-item"

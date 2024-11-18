@@ -1,6 +1,6 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Modal from "./components/Modal/Modal";
 import {
   CVPage,
   GitHubHomePage,
@@ -8,8 +8,11 @@ import {
   GitHubDirectoryViewPage,
 } from "./pages";
 import "./App.css";
+import { ErrorProvider, useError } from "./utils/context/ErrorContext";
 
 const App = () => {
+  const { error, setError } = useError();
+
   return (
     <Router>
       <div>
@@ -22,6 +25,11 @@ const App = () => {
             <Route path="/linkedIn" Component={LinkedInPage} />
           </Routes>
         </main>
+        <Modal
+          isVisible={!!error}
+          message={error || ""}
+          onClose={() => setError(null)}
+        />
       </div>
     </Router>
   );
