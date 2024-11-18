@@ -1,2 +1,2 @@
-const API_URL = "http://34.118.61.132:8080";
+const API_URL = "https://cv-backend-567580537500.europe-central2.run.app";
 export default API_URL;
