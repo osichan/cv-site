@@ -1,5 +1,6 @@
 package org.taskmanagement.app.oleksiicv.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("github")
+@Slf4j
 public class GitHubRestController {
 
     @Value("${token}")
@@ -40,10 +42,13 @@ public class GitHubRestController {
 
         if (response.getStatusCode().is2xxSuccessful()) {
             List<Map<String, Object>> repos = response.getBody();
-            System.out.println(repos);
             if (repos != null) {
                 return repos.stream()
-                        .filter(repo -> !Boolean.parseBoolean(repo.get("private").toString()))
+                        .filter(repo -> {
+                            boolean isPublic = !Boolean.parseBoolean(repo.get("private").toString());
+                            String ownerLogin = ((Map<String, Object>) repo.get("owner")).get("login").toString();
+                            return isPublic && ownerLogin.equals(USER);}
+                        )
                         .map(repo -> Map.of(
                                 "name", repo.get("name").toString(),
                                 "type", "repo"
@@ -128,10 +133,9 @@ public class GitHubRestController {
         }
     }
 
-    @GetMapping("{id}/contents")
+    @PostMapping("{id}/contents")
     public Object getFileOrDirectory(@PathVariable("id") String repoName, @RequestBody PathRequest path) {
         RestTemplate restTemplate = new RestTemplate();
-        System.out.println(path);
 
         String url = "https://api.github.com/repos/%s/%s/contents/%s".formatted(USER, repoName, path.getPath());
 
