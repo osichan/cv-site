@@ -8,7 +8,7 @@ import {
   GitHubDirectoryViewPage,
 } from "./pages";
 import "./App.css";
-import { ErrorProvider, useError } from "./utils/context/ErrorContext";
+import { useError } from "./utils/context/ErrorContext";
 
 const App = () => {
   const { error, setError } = useError();
@@ -21,7 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/" Component={CVPage} />
             <Route path="/github" Component={GitHubHomePage} />
-            <Route path="/:dirPath*" Component={GitHubDirectoryViewPage} />
+            <Route path="/github/*" Component={GitHubDirectoryViewPage} />
             <Route path="/linkedIn" Component={LinkedInPage} />
           </Routes>
         </main>
